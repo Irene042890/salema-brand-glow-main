@@ -49,9 +49,11 @@ const Index = () => {
                 Professional Branding & Design Solutions
               </span>
               <motion.h1
+
               initial={{ transform: "translateY(-100px)" }}
               animate={{ transform: "translateY(0px)" }}
               transition={{ type: "spring" }}
+              
               className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
                 Elevate Your <span className="bg-gradient-brand bg-clip-text text-transparent">Brand Identity</span>
               </motion.h1>
