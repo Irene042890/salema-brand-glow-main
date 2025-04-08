@@ -44,7 +44,7 @@ const ServicesSection = () => {
       description: "Transform your ideas into stunning visual content with our creative design services. Whether it's digital or print design, we create eye-catching visuals that communicate your message effectively and leave a lasting impression.",
       icon: <Brush className="h-6 w-6 text-salema-blue" />,
       images: [
-        { url: "https://source.unsplash.com/random/800x600?design,poster,1", title: "Poster Design", description: "Eye-catching posters for events and promotions." },
+        { url: image1, title: "Poster Design", description: "Eye-catching posters for events and promotions." },
         { url: "https://source.unsplash.com/random/800x600?design,digital,2", title: "Digital Artwork", description: "Custom digital illustrations for various applications." },
         { url: "https://source.unsplash.com/random/800x600?design,banner,3", title: "Banner Design", description: "Attention-grabbing banners for events and websites." },
         { url: "https://source.unsplash.com/random/800x600?design,social,4", title: "Social Media Graphics", description: "Engaging social media content for brand promotion." },
@@ -62,7 +62,7 @@ const ServicesSection = () => {
       description: "Make a professional impression with our high-quality stationery services. From business cards and letterheads to envelopes and notepads, we provide customized stationery solutions that reflect your brand's personality and maintain consistency.",
       icon: <FileText className="h-6 w-6 text-salema-orange" />,
       images: [
-        { url: "https://source.unsplash.com/random/800x600?stationery,business-card,1", title: "Business Cards", description: "Premium business cards with custom finishes." },
+        { url: image1, title: "Business Cards", description: "Premium business cards with custom finishes." },
         { url: "https://source.unsplash.com/random/800x600?stationery,letterhead,2", title: "Letterhead Design", description: "Professional letterhead for business documents." },
         { url: "https://source.unsplash.com/random/800x600?stationery,envelope,3", title: "Envelope Design", description: "Custom envelopes with brand elements." },
         { url: "https://source.unsplash.com/random/800x600?stationery,folder,4", title: "Presentation Folders", description: "Professional folders for marketing materials." },
