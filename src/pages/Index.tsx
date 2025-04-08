@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import GetStartedSection from "@/components/GetStartedSection";
 import ServicesSection from "@/components/ServicesSection";
 import Footer from "@/components/Footer";
+import{motion} from 'framer-motion'
 
 const Index = () => {
   const navigate = useNavigate();
@@ -30,7 +31,7 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <Header onNavClick={scrollToSection} />
       
-      <main>
+      <motion.main>
         {/* Hero Section */}
         <section 
           ref={heroRef}
@@ -47,9 +48,13 @@ const Index = () => {
               <span className="px-4 py-2 rounded-full bg-salema-purple/10 text-salema-purple text-sm font-semibold mb-6 animate-fade-in">
                 Professional Branding & Design Solutions
               </span>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
+              <motion.h1
+              initial={{ transform: "translateY(-100px)" }}
+              animate={{ transform: "translateY(0px)" }}
+              transition={{ type: "spring" }}
+              className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
                 Elevate Your <span className="bg-gradient-brand bg-clip-text text-transparent">Brand Identity</span>
-              </h1>
+              </motion.h1>
               <p className="text-xl text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
                 Salema Supplies provides premium branding, creative design, and stationery services to help your business stand out in a competitive market.
               </p>
@@ -94,7 +99,7 @@ const Index = () => {
         <div ref={getStartedRef}>
           <GetStartedSection />
         </div>
-      </main>
+      </motion.main>
 
       <Footer />
     </div>
