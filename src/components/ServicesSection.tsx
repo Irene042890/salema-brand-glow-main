@@ -45,7 +45,7 @@ const ServicesSection = () => {
       icon: <Brush className="h-6 w-6 text-salema-blue" />,
       images: [
         { url: image1, title: "Poster Design", description: "Eye-catching posters for events and promotions." },
-        { url: "https://source.unsplash.com/random/800x600?design,digital,2", title: "Digital Artwork", description: "Custom digital illustrations for various applications." },
+        { url: image2, title: "Digital Artwork", description: "Custom digital illustrations for various applications." },
         { url: "https://source.unsplash.com/random/800x600?design,banner,3", title: "Banner Design", description: "Attention-grabbing banners for events and websites." },
         { url: "https://source.unsplash.com/random/800x600?design,social,4", title: "Social Media Graphics", description: "Engaging social media content for brand promotion." },
         { url: "https://source.unsplash.com/random/800x600?design,flyer,5", title: "Flyer Design", description: "Informative and appealing flyer designs for marketing." },
