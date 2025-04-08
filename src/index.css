@@ -1,0 +1,95 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 262 86% 75%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 186 100% 57%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 24 94% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 262 86% 75%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+}
+
+@layer components {
+  .btn-gradient {
+    @apply relative overflow-hidden bg-gradient-cta text-white px-6 py-3 rounded-lg 
+           shadow-button transform transition-all duration-300 hover:scale-105 
+           hover:shadow-lg hover:brightness-105 active:scale-95;
+  }
+
+  .btn-outline {
+    @apply border-2 border-salema-purple text-salema-purple px-6 py-3 rounded-lg 
+           transform transition-all duration-300 hover:bg-salema-purple/10 
+           hover:scale-105 active:scale-95;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-card;
+  }
+  
+  .glass {
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-lg;
+  }
+}
